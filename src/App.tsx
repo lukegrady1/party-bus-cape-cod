@@ -11,7 +11,7 @@ import { NotFound } from '@/components/NotFound'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/party-bus-cape-cod">
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />

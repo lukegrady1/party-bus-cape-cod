@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Cake, Heart, Waves, GraduationCap, Briefcase, Wine, type LucideIcon } from 'lucide-react'
 import { SEO } from '@/components/SEO'
-import { BOOKING_URL } from '@/lib/utils'
 
 const occasions: { icon: LucideIcon; title: string; description: string; slug: string }[] = [
   {

@@ -185,12 +185,12 @@ function WhyChooseUs() {
 // ─── Services Teaser ──────────────────────────────────────────────────────────
 
 const occasions = [
-  { Icon: Cake, label: 'Birthday Parties' },
-  { Icon: Heart, label: 'Bachelorette/Bachelor' },
-  { Icon: Waves, label: 'Beach Bar Crawls' },
-  { Icon: GraduationCap, label: 'Prom & Homecoming' },
-  { Icon: Briefcase, label: 'Corporate Events' },
-  { Icon: Wine, label: 'Winery Tours' },
+  { Icon: Cake, label: 'Birthday Parties', slug: 'birthday-parties' },
+  { Icon: Heart, label: 'Bachelorette/Bachelor', slug: 'bachelorette-bachelor-parties' },
+  { Icon: Waves, label: 'Beach Bar Crawls', slug: 'beach-bar-crawls' },
+  { Icon: GraduationCap, label: 'Prom & Homecoming', slug: 'prom-homecoming' },
+  { Icon: Briefcase, label: 'Corporate Events', slug: 'corporate-events' },
+  { Icon: Wine, label: 'Winery Tours', slug: 'winery-tours' },
 ]
 
 function ServiceTeaser() {
@@ -231,32 +231,37 @@ function ServiceTeaser() {
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.07 } } }}
           className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10"
         >
-          {occasions.map(({ Icon, label }, i) => (
+          {occasions.map(({ Icon, label, slug }, i) => (
             <motion.div
               key={label}
               variants={{
                 hidden: { opacity: 0, y: 24 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' as const } },
               }}
-              className="flex items-center gap-3 rounded-xl px-5 py-4"
-              style={{
-                background: 'rgba(18,18,31,0.9)',
-                border: '1px solid rgba(255,45,120,0.12)',
-              }}
             >
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: 'rgba(255,45,120,0.1)' }}
-                aria-hidden="true"
+              <Link
+                to={`/services/${slug}`}
+                className="flex items-center gap-3 rounded-xl px-5 py-4 no-underline transition-all duration-200 hover:scale-[1.03]"
+                style={{
+                  background: 'rgba(18,18,31,0.9)',
+                  border: '1px solid rgba(255,45,120,0.12)',
+                }}
+                aria-label={`Learn more about ${label}`}
               >
-                <Icon size={18} style={{ color: i % 2 === 0 ? '#FF2D78' : '#00E5FF' }} />
-              </div>
-              <span
-                className="text-white/80 text-sm font-medium"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
-              >
-                {label}
-              </span>
+                <div
+                  className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{ background: 'rgba(255,45,120,0.1)' }}
+                  aria-hidden="true"
+                >
+                  <Icon size={18} style={{ color: i % 2 === 0 ? '#FF2D78' : '#00E5FF' }} />
+                </div>
+                <span
+                  className="text-white/80 text-sm font-medium"
+                  style={{ fontFamily: 'DM Sans, sans-serif' }}
+                >
+                  {label}
+                </span>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

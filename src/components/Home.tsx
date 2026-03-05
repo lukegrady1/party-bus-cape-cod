@@ -417,12 +417,12 @@ function FleetPreview() {
           className="text-center"
         >
           <Link
-            to="/fleet"
+            to="/rates"
             className="inline-flex items-center gap-2 text-sm font-semibold no-underline transition-all duration-200 hover:gap-3"
             style={{ color: '#00E5FF', fontFamily: 'DM Sans, sans-serif' }}
-            aria-label="See full fleet details"
+            aria-label="See pricing and rates"
           >
-            See Full Details <ArrowRight size={16} aria-hidden="true" />
+            See Pricing <ArrowRight size={16} aria-hidden="true" />
           </Link>
         </motion.div>
       </div>

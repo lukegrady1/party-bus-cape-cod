@@ -8,7 +8,6 @@ import { BOOKING_URL, PHONE_HREF, PHONE } from '@/lib/utils'
 const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
-  { label: 'Fleet', to: '/fleet' },
   { label: 'Rates', to: '/rates' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'About', to: '/about' },

@@ -174,7 +174,7 @@ export function Footer() {
               className="text-white/20 text-xs text-center"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              All rides provided by licensed and insured operators | Designed &amp; built by Grady Digital
+              All rides provided by licensed and insured operators | Designed &amp; built by <a href="https://gradydigital.com" target="_blank" rel="noopener noreferrer" className="no-underline hover:text-white transition-colors" style={{ color: '#FF2D78' }}>Grady Digital</a>
             </p>
           </div>
         </div>

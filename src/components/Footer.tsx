@@ -174,7 +174,7 @@ export function Footer() {
               className="text-white/20 text-xs text-center"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              All rides provided by licensed and insured operators
+              All rides provided by licensed and insured operators | Designed &amp; built by Grady Digital
             </p>
           </div>
         </div>

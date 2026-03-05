@@ -186,7 +186,7 @@ function WhyChooseUs() {
 
 const occasions = [
   { Icon: Cake, label: 'Birthday Parties', slug: 'birthday-parties' },
-  { Icon: Heart, label: 'Bach Party', slug: 'bachelorette-bachelor-parties' },
+  { Icon: Heart, label: 'Bachelorette/Bachelor', slug: 'bachelorette-bachelor-parties' },
   { Icon: Waves, label: 'Beach Bar Crawls', slug: 'beach-bar-crawls' },
   { Icon: GraduationCap, label: 'Prom & Homecoming', slug: 'prom-homecoming' },
   { Icon: Briefcase, label: 'Corporate Events', slug: 'corporate-events' },
@@ -256,7 +256,7 @@ function ServiceTeaser() {
                   <Icon size={18} style={{ color: i % 2 === 0 ? '#FF2D78' : '#00E5FF' }} />
                 </div>
                 <span
-                  className="text-white/80 text-sm font-medium"
+                  className="text-white/80 text-sm font-medium min-w-0 break-words"
                   style={{ fontFamily: 'DM Sans, sans-serif' }}
                 >
                   {label}

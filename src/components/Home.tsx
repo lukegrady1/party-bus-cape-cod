@@ -16,6 +16,7 @@ import {
   Sparkles,
 } from 'lucide-react'
 import { Hero } from '@/components/Hero'
+import { Reviews } from '@/components/Reviews'
 import { SEO } from '@/components/SEO'
 import { BOOKING_URL } from '@/lib/utils'
 
@@ -44,6 +45,39 @@ const localBusinessSchema = {
   sameAs: [
     'https://www.instagram.com/partybuscapecod',
     'https://www.tiktok.com/@partybuscapecod',
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    ratingCount: '5',
+    reviewCount: '5',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Riley Bent' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Great experience overall! Busses are a great setup for a larger group. Will totally rent again from party bus cape cod!',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Jack Avellar' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Had an awesome time with Party Bus Cape Cod! The bus was clean, the music setup was great, and our driver was chill and professional. Easy booking, no stress, and a really fun night overall.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Lexi Hoffman' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Best party bus service on Cape!! The buses are clean and the drivers are epic. Totally recommend.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Mikey Gray' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'What a great experience from the top all the way down! Great service and a unforgettable experience. I would highly recommend, you will have the time of your lives definitely will be booking again!!',
+    },
   ],
 }
 
@@ -488,6 +522,7 @@ export function Home() {
       />
       <Hero />
       <WhyChooseUs />
+      <Reviews />
       <ServiceTeaser />
       <FleetPreview />
       <HomeCTA />

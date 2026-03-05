@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
@@ -20,6 +20,10 @@ export function Navbar() {
   const isScrolled = scrollY > 20
   const location = useLocation()
 
+  const handleScrollTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
@@ -37,6 +41,7 @@ export function Navbar() {
           {/* Logo */}
           <Link
             to="/"
+            onClick={handleScrollTop}
             className="flex items-center gap-2 no-underline"
             aria-label="Party Bus Cape Cod - Home"
           >
@@ -54,6 +59,7 @@ export function Navbar() {
               <Link
                 key={link.label}
                 to={link.to}
+                onClick={link.to === '/' ? handleScrollTop : undefined}
                 className="text-sm font-medium transition-colors duration-200 no-underline"
                 style={{
                   fontFamily: 'DM Sans, sans-serif',
@@ -128,7 +134,7 @@ export function Navbar() {
                 <Link
                   key={link.label}
                   to={link.to}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => { setMenuOpen(false); if (link.to === '/') handleScrollTop(); }}
                   className="text-base font-medium hover:text-white no-underline py-2 border-b border-white/10 last:border-0"
                   style={{
                     fontFamily: 'DM Sans, sans-serif',

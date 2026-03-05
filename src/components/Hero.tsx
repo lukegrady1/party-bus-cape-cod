@@ -168,7 +168,7 @@ export function Hero() {
               textShadow: '0 0 30px rgba(255,45,120,0.6), 0 0 60px rgba(255,45,120,0.3)',
             }}
           >
-            Your Party Starts Here
+            Your Party in Motion
           </motion.h1>
 
           {/* Sub-headline */}

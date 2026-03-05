@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -9,7 +9,7 @@
   --color-surface: #12121F;
   --color-text-muted: #A0A0B8;
 
-  --font-display: 'Pacifico', cursive;
+  --font-display: 'Permanent Marker', cursive;
   --font-heading: 'Bebas Neue', sans-serif;
   --font-body: 'DM Sans', sans-serif;
 }
@@ -130,6 +130,6 @@ body::before {
 ::-webkit-scrollbar-thumb { background: #FF2D78; border-radius: 3px; }
 
 /* Font helpers */
-.font-display { font-family: 'Pacifico', cursive; }
+.font-display { font-family: 'Permanent Marker', cursive; }
 .font-heading { font-family: 'Bebas Neue', sans-serif; }
 .font-body { font-family: 'DM Sans', sans-serif; }

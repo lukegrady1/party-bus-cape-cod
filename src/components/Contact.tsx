@@ -41,6 +41,21 @@ export function Contact() {
         title="Contact Party Bus Cape Cod | Book Your Party Bus"
         description="Ready to book your Cape Cod party bus? Call (508)-241-1800, email us, or fill out our online booking form. We respond within 24 hours."
         canonical="/contact"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'Party Bus Cape Cod',
+          telephone: '+15082411800',
+          email: 'partybuscapecod@gmail.com',
+          url: 'https://partybuscapecod.com',
+          contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+15082411800',
+            contactType: 'reservations',
+            email: 'partybuscapecod@gmail.com',
+            availableLanguage: 'English',
+          },
+        }}
       />
     <section
       id="contact"

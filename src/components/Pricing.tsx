@@ -208,12 +208,12 @@ export function Pricing() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h3
+          <h2
             className="text-3xl sm:text-4xl text-white text-center mb-8"
             style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.02em' }}
           >
             Frequently Asked Questions
-          </h3>
+          </h2>
 
           <div className="space-y-3">
             {faqs.map((faq) => (
@@ -230,12 +230,12 @@ export function Pricing() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-16 text-center"
         >
-          <h3
+          <h2
             className="text-3xl sm:text-4xl text-white mb-6"
             style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.02em' }}
           >
             Ready to Get the Party Started?
-          </h3>
+          </h2>
           <a
             href={BOOKING_URL}
             target="_blank"

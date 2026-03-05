@@ -44,6 +44,20 @@ export function About() {
         title="About Party Bus Cape Cod | Local Cape Cod Party Bus Company"
         description="Meet Party Bus Cape Cod — your local, licensed & insured party bus rental company. Cape Cod born and raised, serving all towns from Hyannis to Provincetown."
         canonical="/about"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Party Bus Cape Cod',
+          description: 'Cape Cod\'s premier party bus rental company. Licensed and insured, serving birthdays, bachelorette parties, prom, corporate events, and more.',
+          url: 'https://partybuscapecod.com',
+          telephone: '+15082411800',
+          email: 'partybuscapecod@gmail.com',
+          areaServed: 'Cape Cod, MA',
+          sameAs: [
+            'https://www.instagram.com/partybuscapecod',
+            'https://www.tiktok.com/@partybuscapecod',
+          ],
+        }}
       />
     <section
       id="about"

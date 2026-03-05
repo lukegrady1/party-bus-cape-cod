@@ -126,7 +126,7 @@ export function Gallery() {
           className="text-center text-white/30 text-sm mt-6 italic"
           style={{ fontFamily: 'DM Sans, sans-serif' }}
         >
-          More photos coming soon — follow us on Instagram &amp; Facebook for live updates!
+          More photos coming soon — follow us on Instagram &amp; TikTok for live updates!
         </motion.p>
       </div>
     </section>

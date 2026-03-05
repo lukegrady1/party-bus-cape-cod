@@ -7,6 +7,7 @@ import { Pricing } from '@/components/Pricing'
 import { Gallery } from '@/components/Gallery'
 import { About } from '@/components/About'
 import { Contact } from '@/components/Contact'
+import { NotFound } from '@/components/NotFound'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

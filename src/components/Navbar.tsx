@@ -43,7 +43,7 @@ export function Navbar() {
           >
             <span
               className="text-lg md:text-xl font-display text-white leading-tight"
-              style={{ fontFamily: 'Pacifico, cursive', textShadow: '0 0 10px rgba(255,45,120,0.5)' }}
+              style={{ fontFamily: 'Permanent Marker, cursive', textShadow: '0 0 10px rgba(255,45,120,0.5)' }}
             >
               Party Bus Cape Cod
             </span>

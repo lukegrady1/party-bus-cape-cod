@@ -38,7 +38,13 @@ const localBusinessSchema = {
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '08:00',
+    closes: '23:59',
   },
+  sameAs: [
+    'https://www.instagram.com/partybuscapecod',
+    'https://www.tiktok.com/@partybuscapecod',
+  ],
 }
 
 // ─── Why Choose Us ────────────────────────────────────────────────────────────
@@ -257,7 +263,6 @@ const buses = [
     name: 'The Cape Classic',
     seats: 22,
     price: '$250',
-    badge: 'POPULAR',
     color: '#FF2D78',
     Icon: Sparkles,
     highlights: ['Everything in Cruiser', 'Dance floor space', 'Extra bar area', 'Upgraded sound'],
@@ -311,15 +316,6 @@ function FleetPreview() {
                   border: `1px solid ${bus.color}30`,
                 }}
               >
-                {bus.badge && (
-                  <span
-                    className="absolute top-4 right-4 text-xs font-bold px-3 py-1 rounded-full"
-                    style={{ background: bus.color, color: '#0A0A14', fontFamily: 'DM Sans, sans-serif' }}
-                  >
-                    {bus.badge}
-                  </span>
-                )}
-
                 <div className="flex items-start gap-4 mb-5">
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"

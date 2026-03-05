@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Instagram, Facebook } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import { BOOKING_URL, PHONE, PHONE_HREF, EMAIL } from '@/lib/utils'
 
 const navLinks = [
@@ -45,7 +45,7 @@ export function Footer() {
             >
               <span
                 className="text-lg text-white"
-                style={{ fontFamily: 'Pacifico, cursive', textShadow: '0 0 10px rgba(255,45,120,0.4)' }}
+                style={{ fontFamily: 'Permanent Marker, cursive', textShadow: '0 0 10px rgba(255,45,120,0.4)' }}
               >
                 Party Bus Cape Cod
               </span>
@@ -60,23 +60,20 @@ export function Footer() {
             {/* Social icons */}
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/partybuscapecod"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Follow Party Bus Cape Cod on Instagram"
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white/60 hover:text-white transition-colors no-underline"
                 style={{ background: 'rgba(255,45,120,0.1)', border: '1px solid rgba(255,45,120,0.2)' }}
               >
                 <Instagram size={18} aria-hidden="true" />
               </a>
+
               <a
-                href="#"
-                aria-label="Follow Party Bus Cape Cod on Facebook"
-                className="w-10 h-10 rounded-full flex items-center justify-center text-white/60 hover:text-white transition-colors no-underline"
-                style={{ background: 'rgba(0,229,255,0.1)', border: '1px solid rgba(0,229,255,0.2)' }}
-              >
-                <Facebook size={18} aria-hidden="true" />
-              </a>
-              <a
-                href="#"
+                href="https://www.tiktok.com/@partybuscapecod"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Follow Party Bus Cape Cod on TikTok"
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white/60 hover:text-white transition-colors no-underline"
                 style={{ background: 'rgba(255,224,61,0.1)', border: '1px solid rgba(255,224,61,0.2)' }}

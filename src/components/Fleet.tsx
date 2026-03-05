@@ -25,7 +25,7 @@ const buses = [
     name: 'The Cape Classic',
     seats: 22,
     price: '$250',
-    badge: 'POPULAR',
+    badge: null,
     color: '#FF2D78',
     features: [
       'Everything in Cruiser',
@@ -47,6 +47,28 @@ export function Fleet() {
         title="Party Bus Fleet Cape Cod | 15 & 22-Passenger Buses"
         description="Choose from our 15-seat Shoreline Cruiser ($200/hr) or 22-seat Cape Classic ($250/hr). Premium sound, LED lighting, leather seating & more. Book online today."
         canonical="/fleet"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Party Bus Cape Cod Fleet',
+          description: 'Our fleet of premium party buses available for rental on Cape Cod.',
+          itemListElement: buses.map((bus, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            item: {
+              '@type': 'Product',
+              name: bus.name,
+              description: `${bus.seats}-passenger party bus with ${bus.features.join(', ')}`,
+              offers: {
+                '@type': 'Offer',
+                price: bus.price.replace('$', ''),
+                priceCurrency: 'USD',
+                unitText: 'per hour',
+                availability: 'https://schema.org/InStock',
+              },
+            },
+          })),
+        }}
       />
     <section
       id="fleet"

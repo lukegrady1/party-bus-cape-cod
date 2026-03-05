@@ -53,6 +53,18 @@ export function Occasions() {
         title="Party Bus Services Cape Cod | Birthdays, Bachelorettes & More"
         description="Party bus rentals for every occasion on Cape Cod. Birthdays, bachelorette parties, prom, winery tours, beach bar crawls & corporate events. Book your ride today!"
         canonical="/services"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Party Bus Cape Cod Services',
+          description: 'Party bus rental services for every occasion on Cape Cod.',
+          itemListElement: occasions.map((o, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: o.title,
+            description: o.description,
+          })),
+        }}
       />
     <section
       id="services"

@@ -164,7 +164,7 @@ export function Hero() {
             variants={fadeUp}
             className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-display text-white mb-4 leading-tight"
             style={{
-              fontFamily: 'Pacifico, cursive',
+              fontFamily: 'Permanent Marker, cursive',
               textShadow: '0 0 30px rgba(255,45,120,0.6), 0 0 60px rgba(255,45,120,0.3)',
             }}
           >
@@ -177,7 +177,7 @@ export function Hero() {
             className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{ fontFamily: 'DM Sans, sans-serif' }}
           >
-            Cape Cod's Premier Party Bus Experience — Safe, Fun & Unforgettable
+            Cape Cod's Premier Party Bus Experience — Wild, Fun & Unforgettable
           </motion.p>
 
           {/* CTA Buttons */}

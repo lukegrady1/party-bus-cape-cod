@@ -1,38 +1,45 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Cake, Heart, Waves, GraduationCap, Briefcase, Wine, type LucideIcon } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { BOOKING_URL } from '@/lib/utils'
 
-const occasions: { icon: LucideIcon; title: string; description: string }[] = [
+const occasions: { icon: LucideIcon; title: string; description: string; slug: string }[] = [
   {
     icon: Cake,
     title: 'Birthday Parties',
     description: 'Make your birthday unforgettable with a full party bus experience your crew will talk about for years.',
+    slug: 'birthday-parties',
   },
   {
     icon: Heart,
     title: 'Bachelorette/Bachelor',
     description: 'The best pre-wedding night out on the Cape — dance, drink, and celebrate in style.',
+    slug: 'bachelorette-bachelor-parties',
   },
   {
     icon: Waves,
     title: 'Beach Bar Crawls',
     description: 'Hit every hot spot on Cape Cod without worrying about a designated driver.',
+    slug: 'beach-bar-crawls',
   },
   {
     icon: GraduationCap,
     title: 'Prom & Homecoming',
     description: 'Arrive in style, leave in legend. Make it the night everyone remembers.',
+    slug: 'prom-homecoming',
   },
   {
     icon: Briefcase,
     title: 'Corporate Events',
     description: 'Team nights done right — we handle transportation so your crew can focus on the fun.',
+    slug: 'corporate-events',
   },
   {
     icon: Wine,
     title: 'Winery Tours',
     description: 'Sip your way through Cape Cod\'s finest wineries in total comfort and luxury.',
+    slug: 'winery-tours',
   },
 ]
 
@@ -143,21 +150,17 @@ export function Occasions() {
               >
                 {occasion.description}
               </p>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Book now for ${occasion.title}`}
+              <Link
+                to={`/services/${occasion.slug}`}
+                aria-label={`Learn more about ${occasion.title}`}
                 className="text-sm font-semibold no-underline transition-all duration-200"
                 style={{
                   color: '#FF2D78',
                   fontFamily: 'DM Sans, sans-serif',
                 }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.textShadow = '0 0 10px rgba(255,45,120,0.7)' }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.textShadow = 'none' }}
               >
-                Book Now →
-              </a>
+                Learn More →
+              </Link>
             </motion.div>
           ))}
         </motion.div>

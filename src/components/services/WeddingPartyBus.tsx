@@ -1,30 +1,30 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { GraduationCap, Check, ArrowRight } from 'lucide-react'
+import { Heart, Check, ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { BOOKING_URL, PHONE, PHONE_HREF } from '@/lib/utils'
 
 const benefits = [
-  'A licensed, insured professional driver — parents can relax knowing their kids are safe',
-  'Room for the whole friend group on one bus, so nobody misses the entrance',
-  'LED lighting and premium sound make the ride to prom as memorable as the dance itself',
-  'Pick-up and drop-off at multiple addresses — we work around your schedule',
+  'Shuttle the entire wedding party between venue, ceremony, photos, and reception — no carpool chaos',
+  'Keep the bridal party together and on schedule with a professional, punctual driver',
+  'Premium sound, LED lighting, and room to celebrate between stops',
+  'A licensed, insured ride so everyone can toast the newlyweds worry-free',
 ]
 
-export function PromHomecoming() {
+export function WeddingPartyBus() {
   return (
     <>
       <SEO
-        title="Prom Party Bus Cape Cod | Prom & Homecoming Bus Rental 2026"
-        description="Make prom night legendary with a Cape Cod party bus. Licensed & insured drivers, 15 & 22-seat buses, LED lights & premium sound. Cheaper than a limo. Serving all Cape Cod high schools. From $200/hr."
-        canonical="/services/prom-homecoming"
+        title="Wedding Party Bus Cape Cod | Wedding Transportation Rental"
+        description="Cape Cod wedding party bus rental. Shuttle your wedding party between ceremony, photos & reception. 15 & 22-seat premium buses. Licensed & insured. From $200/hr. Call (508)-241-1800."
+        canonical="/services/wedding-party-bus"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'Service',
-          name: 'Prom & Homecoming Party Bus',
+          name: 'Wedding Party Bus Rental',
           provider: { '@type': 'LocalBusiness', name: 'Party Bus Cape Cod' },
           areaServed: 'Cape Cod, MA',
-          description: 'Prom and homecoming party bus rentals on Cape Cod. Licensed and insured drivers for a safe, memorable night.',
+          description: 'Wedding party bus rentals on Cape Cod. Premium transportation for your wedding day — ceremony, photos, and reception.',
         }}
       />
       <section className="py-20 md:py-28" style={{ background: '#0A0A14' }}>
@@ -40,19 +40,19 @@ export function PromHomecoming() {
               style={{ background: 'rgba(255,224,61,0.1)', border: '1px solid rgba(255,224,61,0.2)' }}
               aria-hidden="true"
             >
-              <GraduationCap size={32} style={{ color: '#FFE03D' }} />
+              <Heart size={32} style={{ color: '#FFE03D' }} />
             </div>
             <h1
               className="text-5xl sm:text-6xl md:text-7xl text-white leading-tight mb-6"
               style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.02em' }}
             >
-              Prom &amp; Homecoming Party Bus
+              Wedding Party Bus on Cape Cod
             </h1>
             <p
               className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              Arrive in style, leave in legend. A party bus turns prom night from "we need a ride" into "we need to do this every year." Your crew rolls up together, music blasting, looking like absolute legends.
+              Your wedding day deserves better than a parking lot scramble. Load up the wedding party, shuttle between your Cape Cod ceremony, photo spots, and reception venue, and keep the celebration rolling all day long. We handle the driving — you handle the "I do's."
             </p>
           </motion.div>
 
@@ -68,7 +68,7 @@ export function PromHomecoming() {
               className="text-3xl text-white mb-6"
               style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.02em' }}
             >
-              Safe Rides, Legendary Arrivals
+              Why Couples Choose Our Wedding Bus
             </h2>
             <ul className="space-y-4">
               {benefits.map((b) => (
@@ -84,6 +84,28 @@ export function PromHomecoming() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="rounded-2xl p-8 mb-12"
+            style={{ background: 'rgba(18,18,31,0.9)', border: '1px solid rgba(255,45,120,0.15)' }}
+          >
+            <h2
+              className="text-3xl text-white mb-6"
+              style={{ fontFamily: 'Bebas Neue, sans-serif', letterSpacing: '0.02em' }}
+            >
+              Popular Cape Cod Wedding Venues We Serve
+            </h2>
+            <p
+              className="text-white/70 text-base leading-relaxed"
+              style={{ fontFamily: 'DM Sans, sans-serif' }}
+            >
+              We provide wedding transportation across all of Cape Cod. Whether your venue is in Chatham, Falmouth, Barnstable, Provincetown, Harwich, Dennis, Yarmouth, or anywhere on the Cape — we'll get your wedding party there on time and in style. We also serve Plymouth and the South Shore for couples traveling from off-Cape.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center"
           >
@@ -91,18 +113,18 @@ export function PromHomecoming() {
               className="text-lg text-white/60 mb-8"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              Starting at $200/hr. Split it with the group and it costs less than a limo — with ten times the fun.
+              Starting at $200/hr. Most wedding groups book 4-6 hours. Contact us for a custom wedding package.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Book your prom party bus"
+                aria-label="Book your wedding party bus"
                 className="px-10 py-4 rounded-full text-base font-bold text-white no-underline transition-all duration-200 hover:scale-105"
                 style={{ background: '#FF2D78', boxShadow: '0 0 25px rgba(255,45,120,0.5)', fontFamily: 'DM Sans, sans-serif' }}
               >
-                Book Your Prom Bus
+                Book Your Wedding Bus
               </a>
               <a
                 href={PHONE_HREF}

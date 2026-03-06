@@ -15,8 +15,8 @@ export function BirthdayParties() {
   return (
     <>
       <SEO
-        title="Birthday Party Bus Cape Cod | Celebrate on Wheels"
-        description="Make your birthday legendary with a Cape Cod party bus. 15 & 22-passenger buses with premium sound, LED lights & pro driver. Starting at $200/hr. Book today."
+        title="Birthday Party Bus Cape Cod | Party Bus Rental for Birthdays"
+        description="Make your birthday legendary with a Cape Cod party bus rental. 15 & 22-passenger buses with premium sound, LED lights & professional driver. From $200/hr. Serving Hyannis, Barnstable & all Cape Cod."
         canonical="/services/birthday-parties"
         schema={{
           '@context': 'https://schema.org',

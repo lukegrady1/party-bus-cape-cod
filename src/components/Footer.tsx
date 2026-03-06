@@ -12,6 +12,16 @@ const navLinks = [
   { label: 'Contact', to: '/contact' },
 ]
 
+const serviceLinks = [
+  { label: 'Bachelorette Parties', to: '/services/bachelorette-bachelor-parties' },
+  { label: 'Birthday Parties', to: '/services/birthday-parties' },
+  { label: 'Beach Bar Crawls', to: '/services/beach-bar-crawls' },
+  { label: 'Weddings', to: '/services/wedding-party-bus' },
+  { label: 'Prom & Homecoming', to: '/services/prom-homecoming' },
+  { label: 'Winery Tours', to: '/services/winery-tours' },
+  { label: 'Corporate Events', to: '/services/corporate-events' },
+]
+
 // TikTok icon (not in lucide)
 function TikTokIcon({ size = 20 }: { size?: number }) {
   return (
@@ -33,7 +43,7 @@ export function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12"
         >
           {/* Logo + About Column */}
           <div>
@@ -92,6 +102,29 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               {navLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
+                    className="text-white/50 hover:text-white text-sm no-underline transition-colors duration-200"
+                    style={{ fontFamily: 'DM Sans, sans-serif' }}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services Column */}
+          <div>
+            <h4
+              className="text-white font-semibold mb-4 text-sm uppercase tracking-wider"
+              style={{ fontFamily: 'DM Sans, sans-serif' }}
+            >
+              Services
+            </h4>
+            <ul className="space-y-2">
+              {serviceLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     to={link.to}

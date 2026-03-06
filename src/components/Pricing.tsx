@@ -35,6 +35,26 @@ const faqs = [
     answer:
       'Yes! You\'re welcome to bring your own beverages. We ask that all passengers are of legal drinking age (21+) when consuming alcohol, and that you drink responsibly. Our buses include cooler space for your convenience.',
   },
+  {
+    question: 'How much does a party bus cost on Cape Cod?',
+    answer:
+      'Our 15-passenger Shoreline Cruiser starts at $200/hr and our 22-passenger Cape Classic starts at $250/hr, with a 2-hour minimum. Final pricing depends on trip length, date, and event type. Split between a group, it often costs less than rideshares or a traditional limo rental.',
+  },
+  {
+    question: 'Is a party bus cheaper than a limo on Cape Cod?',
+    answer:
+      'Per person, absolutely. A party bus fits 15-22 people starting at $200/hr, while a limo typically seats 6-10 for a similar hourly rate. You get more space, a better sound system, room to stand and dance, and a way better vibe — all at a lower per-person cost.',
+  },
+  {
+    question: 'Can you do winery or brewery tours?',
+    answer:
+      'Yes! Winery and brewery tours are one of our most popular bookings. We can create a custom route through Cape Cod\'s best spots including Truro Vineyards, First Crush Winery, Cape Cod Beer, Hog Island Beer Co., and more. Most groups book 3-4 hours.',
+  },
+  {
+    question: 'Do you serve areas outside Cape Cod?',
+    answer:
+      'We\'re based on Cape Cod and serve all towns from Sandwich to Provincetown, including Hyannis, Barnstable, Falmouth, Chatham, Yarmouth, Dennis, Harwich, Orleans, Eastham, Wellfleet, and Truro. We also serve Plymouth and parts of the South Shore — contact us for trips beyond Cape Cod.',
+  },
 ]
 
 function FaqItem({ question, answer }: { question: string; answer: string }) {
@@ -105,8 +125,8 @@ export function Pricing() {
   return (
     <>
       <SEO
-        title="Party Bus Pricing Cape Cod | Starting at $200/hr"
-        description="Transparent party bus pricing with no hidden fees. 15-passenger bus from $200/hr, 22-passenger from $250/hr. 2-hour minimum. Get a custom quote today."
+        title="How Much Is a Party Bus on Cape Cod? | Prices from $200/hr"
+        description="Cape Cod party bus prices: 15-seat bus from $200/hr, 22-seat from $250/hr. No hidden fees, 2-hour minimum. Cheaper than a limo with more room & more fun. Get a free quote — call (508)-241-1800."
         canonical="/rates"
         schema={faqSchema}
       />

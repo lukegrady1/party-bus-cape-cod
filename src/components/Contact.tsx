@@ -38,8 +38,8 @@ export function Contact() {
   return (
     <>
       <SEO
-        title="Contact Party Bus Cape Cod | Book Your Party Bus"
-        description="Ready to book your Cape Cod party bus? Call (508)-241-1800, email us, or fill out our online booking form. We respond within 24 hours."
+        title="Book a Party Bus on Cape Cod | Contact & Reservations"
+        description="Book your Cape Cod party bus today. Call (508)-241-1800, email partybuscapecod@gmail.com, or fill out our online form. 15 & 22-seat buses from $200/hr. We respond within 24 hours."
         canonical="/contact"
         schema={{
           '@context': 'https://schema.org',

@@ -30,8 +30,8 @@ export function Gallery() {
   return (
     <>
       <SEO
-        title="Party Bus Photo Gallery | Cape Cod Party Bus Rentals"
-        description="See the Party Bus Cape Cod experience in action. Photos from birthday parties, bachelorettes, prom nights, winery tours & more. Book your unforgettable Cape Cod ride today."
+        title="Party Bus Cape Cod Photos | See Our Buses & Events"
+        description="See Party Bus Cape Cod in action. Photos from bachelorette parties, bar crawls, weddings, prom nights, winery tours & birthday celebrations. 15 & 22-seat premium party buses. Book your ride today."
         canonical="/gallery"
       />
     <section

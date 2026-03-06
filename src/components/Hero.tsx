@@ -177,7 +177,7 @@ export function Hero() {
             className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
             style={{ fontFamily: 'DM Sans, sans-serif' }}
           >
-            Cape Cod's Premier Party Bus Experience — Wild, Fun & Unforgettable
+            Cape Cod's #1 Party Bus Rental — Serving Hyannis, Provincetown & All of Cape Cod
           </motion.p>
 
           {/* CTA Buttons */}

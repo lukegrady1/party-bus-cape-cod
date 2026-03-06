@@ -14,6 +14,7 @@ import {
   ArrowRight,
   Bus,
   Sparkles,
+  Gem,
 } from 'lucide-react'
 import { Hero } from '@/components/Hero'
 import { Reviews } from '@/components/Reviews'
@@ -24,7 +25,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Party Bus Cape Cod',
-  description: "Cape Cod's premier party bus rental company. Licensed and insured, serving birthdays, bachelorette parties, prom, corporate events, and more.",
+  description: "Cape Cod's premier party bus rental company. Licensed and insured party bus rentals for birthdays, bachelorette parties, prom, bar crawls, winery tours, weddings, corporate events, and more. Serving Hyannis, Barnstable, Provincetown, Falmouth, Chatham, and all Cape Cod towns.",
   url: 'https://partybuscapecod.com',
   telephone: '+15082411800',
   email: 'partybuscapecod@gmail.com',
@@ -32,10 +33,34 @@ const localBusinessSchema = {
     '@type': 'PostalAddress',
     addressLocality: 'Hyannis',
     addressRegion: 'MA',
+    postalCode: '02601',
     addressCountry: 'US',
   },
-  areaServed: 'Cape Cod, MA',
+  areaServed: [
+    { '@type': 'City', name: 'Hyannis, MA' },
+    { '@type': 'City', name: 'Barnstable, MA' },
+    { '@type': 'City', name: 'Provincetown, MA' },
+    { '@type': 'City', name: 'Falmouth, MA' },
+    { '@type': 'City', name: 'Chatham, MA' },
+    { '@type': 'City', name: 'Yarmouth, MA' },
+    { '@type': 'City', name: 'Dennis, MA' },
+    { '@type': 'City', name: 'Harwich, MA' },
+    { '@type': 'City', name: 'Orleans, MA' },
+    { '@type': 'City', name: 'Sandwich, MA' },
+    { '@type': 'City', name: 'Eastham, MA' },
+    { '@type': 'City', name: 'Wellfleet, MA' },
+    { '@type': 'City', name: 'Truro, MA' },
+    { '@type': 'City', name: 'Plymouth, MA' },
+  ],
   priceRange: '$200–$250/hr',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Party Bus Rental Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '15-Passenger Party Bus Rental' }, price: '200', priceCurrency: 'USD', unitText: 'per hour' },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '22-Passenger Party Bus Rental' }, price: '250', priceCurrency: 'USD', unitText: 'per hour' },
+    ],
+  },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -134,7 +159,7 @@ function WhyChooseUs() {
             className="mt-4 text-lg text-white/60 max-w-2xl mx-auto"
             style={{ fontFamily: 'DM Sans, sans-serif' }}
           >
-            We've been delivering unforgettable nights on Cape Cod for years. Here's what sets us apart.
+            Cape Cod's most trusted party bus rental — here's what sets us apart from other transportation options.
           </p>
         </motion.div>
 
@@ -191,6 +216,7 @@ const occasions = [
   { Icon: GraduationCap, label: 'Prom & Homecoming', slug: 'prom-homecoming' },
   { Icon: Briefcase, label: 'Corporate Events', slug: 'corporate-events' },
   { Icon: Wine, label: 'Winery Tours', slug: 'winery-tours' },
+  { Icon: Gem, label: 'Weddings', slug: 'wedding-party-bus' },
 ]
 
 function ServiceTeaser() {
@@ -220,7 +246,7 @@ function ServiceTeaser() {
             className="mt-4 text-lg text-white/60 max-w-xl mx-auto"
             style={{ fontFamily: 'DM Sans, sans-serif' }}
           >
-            From beach bar crawls to prom night, there's no better way to travel with your crew.
+            From bachelorette parties and bar crawls to prom, weddings, and winery tours — there's no better way to travel Cape Cod with your crew.
           </p>
         </motion.div>
 
@@ -520,8 +546,8 @@ export function Home() {
   return (
     <>
       <SEO
-        title="Party Bus Rentals Cape Cod | Book Your Party Bus Today"
-        description="Cape Cod's premier party bus rental service. Licensed & insured, 15 & 22-passenger buses for birthdays, bachelorettes, prom & more. Starting at $200/hr. Call (508)-241-1800."
+        title="Party Bus Cape Cod | #1 Party Bus Rental in Cape Cod, MA"
+        description="Cape Cod's #1 party bus rental. 15 & 22-passenger buses for bachelorette parties, bar crawls, prom, weddings & more. Licensed & insured. From $200/hr. Serving Hyannis, Barnstable, Provincetown & all Cape Cod. Call (508)-241-1800."
         canonical="/"
         schema={localBusinessSchema}
       />

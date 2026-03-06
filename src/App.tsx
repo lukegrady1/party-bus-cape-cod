@@ -13,6 +13,7 @@ import { BeachBarCrawls } from '@/components/services/BeachBarCrawls'
 import { PromHomecoming } from '@/components/services/PromHomecoming'
 import { CorporateEvents } from '@/components/services/CorporateEvents'
 import { WineryTours } from '@/components/services/WineryTours'
+import { WeddingPartyBus } from '@/components/services/WeddingPartyBus'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="services/prom-homecoming" element={<PromHomecoming />} />
           <Route path="services/corporate-events" element={<CorporateEvents />} />
           <Route path="services/winery-tours" element={<WineryTours />} />
+          <Route path="services/wedding-party-bus" element={<WeddingPartyBus />} />
           <Route path="rates" element={<Pricing />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="about" element={<About />} />

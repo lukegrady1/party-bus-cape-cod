@@ -15,8 +15,8 @@ export function BacheloretteParties() {
   return (
     <>
       <SEO
-        title="Bachelorette & Bachelor Party Bus Cape Cod | Pre-Wedding Night Out"
-        description="The best bachelorette and bachelor party bus on Cape Cod. Keep your crew together, hit every spot, and celebrate before the big day. Starting at $200/hr."
+        title="Bachelorette Party Bus Cape Cod | Bachelor Party Bus Rental"
+        description="Book the best bachelorette & bachelor party bus on Cape Cod. Hit every bar from Hyannis to Provincetown. 15 & 22-seat buses, LED lights, premium sound. From $200/hr. Call (508)-241-1800."
         canonical="/services/bachelorette-bachelor-parties"
         schema={{
           '@context': 'https://schema.org',
@@ -52,7 +52,7 @@ export function BacheloretteParties() {
               className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              One last ride before "I do." Round up the wedding party, pick a route through Cape Cod's best spots, and let us handle the rest. No designated drivers, no rideshare drama — just a night to remember.
+              One last ride before "I do." Round up the wedding party, pick a route through Cape Cod's best bars and restaurants — from Hyannis to Provincetown, Chatham to Falmouth — and let us handle the rest. No designated drivers, no rideshare drama — just a night to remember on the Cape.
             </p>
           </motion.div>
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Cake, Heart, Waves, GraduationCap, Briefcase, Wine, type LucideIcon } from 'lucide-react'
+import { Cake, Heart, Waves, GraduationCap, Briefcase, Wine, Gem, type LucideIcon } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 
 const occasions: { icon: LucideIcon; title: string; description: string; slug: string }[] = [
@@ -40,6 +40,12 @@ const occasions: { icon: LucideIcon; title: string; description: string; slug: s
     description: 'Sip your way through Cape Cod\'s finest wineries in total comfort and luxury.',
     slug: 'winery-tours',
   },
+  {
+    icon: Gem,
+    title: 'Weddings',
+    description: 'Shuttle your wedding party between ceremony, photos, and reception in style.',
+    slug: 'wedding-party-bus',
+  },
 ]
 
 const containerVariants = {
@@ -56,8 +62,8 @@ export function Occasions() {
   return (
     <>
       <SEO
-        title="Party Bus Services Cape Cod | Birthdays, Bachelorettes & More"
-        description="Party bus rentals for every occasion on Cape Cod. Birthdays, bachelorette parties, prom, winery tours, beach bar crawls & corporate events. Book your ride today!"
+        title="Party Bus Rental Services Cape Cod | All Occasions & Events"
+        description="Party bus rental for every occasion on Cape Cod — bachelorette parties, birthdays, prom, weddings, winery tours, bar crawls & corporate events. 15 & 22-seat buses from $200/hr. Serving Hyannis to Provincetown."
         canonical="/services"
         schema={{
           '@context': 'https://schema.org',

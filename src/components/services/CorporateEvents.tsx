@@ -15,8 +15,8 @@ export function CorporateEvents() {
   return (
     <>
       <SEO
-        title="Corporate Event Party Bus Cape Cod | Team Outings & Company Events"
-        description="Elevate your next corporate event with a Cape Cod party bus. Team outings, holiday parties, client dinners & more. Professional, on-time service from $200/hr."
+        title="Corporate Event Bus Cape Cod | Group Transportation for Teams"
+        description="Professional group transportation for corporate events on Cape Cod. Team outings, holiday parties, client dinners & company events. On-time, premium service from $200/hr. Book today."
         canonical="/services/corporate-events"
         schema={{
           '@context': 'https://schema.org',

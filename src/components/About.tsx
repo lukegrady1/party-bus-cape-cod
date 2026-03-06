@@ -41,8 +41,8 @@ export function About() {
   return (
     <>
       <SEO
-        title="About Party Bus Cape Cod | Local Cape Cod Party Bus Company"
-        description="Meet Party Bus Cape Cod — your local, licensed & insured party bus rental company. Cape Cod born and raised, serving all towns from Hyannis to Provincetown."
+        title="About Party Bus Cape Cod | Local Party Bus Rental Company"
+        description="Party Bus Cape Cod is your local, licensed & insured party bus rental company. Cape Cod born and raised, serving Hyannis, Barnstable, Provincetown, Falmouth, Chatham, Plymouth & all Cape Cod towns."
         canonical="/about"
         schema={{
           '@context': 'https://schema.org',
@@ -103,7 +103,9 @@ export function About() {
               className="text-base text-white/50 leading-relaxed mb-10"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              Born and raised on the Cape, we know every back road, every beach bar, and every hidden gem.
+              Born and raised on the Cape, we know every back road, every beach bar, and every hidden gem from
+              Sandwich to Provincetown. Whether you're bar crawling through Hyannis, wine tasting in Truro,
+              celebrating in Chatham, or heading out for a night in Falmouth — we know the best routes and the best stops.
               Let us be your guide to the ultimate Cape Cod night out.
             </p>
 
@@ -168,30 +170,28 @@ export function About() {
               </motion.div>
             ))}
 
-            {/* Decorative bus card */}
+            {/* Areas We Serve card */}
             <motion.div
-              className="col-span-2 rounded-2xl p-6 text-center"
+              className="col-span-2 rounded-2xl p-6"
               style={{
                 background: 'linear-gradient(135deg, rgba(255,45,120,0.1), rgba(0,229,255,0.1))',
                 border: '1px solid rgba(255,45,120,0.2)',
               }}
-              animate={{ y: [0, -5, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <div className="mb-2 flex justify-center" aria-hidden="true">
-                <MapPin size={32} style={{ color: '#00E5FF' }} />
+              <div className="mb-3 flex items-center gap-2 justify-center" aria-hidden="true">
+                <MapPin size={24} style={{ color: '#00E5FF' }} />
+                <p
+                  className="text-white font-semibold"
+                  style={{ fontFamily: 'DM Sans, sans-serif' }}
+                >
+                  Areas We Serve
+                </p>
               </div>
               <p
-                className="text-white font-semibold"
+                className="text-white/50 text-sm text-center leading-relaxed"
                 style={{ fontFamily: 'DM Sans, sans-serif' }}
               >
-                Serving all of Cape Cod
-              </p>
-              <p
-                className="text-white/40 text-sm"
-                style={{ fontFamily: 'DM Sans, sans-serif' }}
-              >
-                Hyannis to Provincetown & beyond
+                Hyannis &bull; Barnstable &bull; Provincetown &bull; Falmouth &bull; Chatham &bull; Yarmouth &bull; Dennis &bull; Harwich &bull; Orleans &bull; Sandwich &bull; Eastham &bull; Wellfleet &bull; Truro &bull; Plymouth &bull; South Shore
               </p>
             </motion.div>
           </motion.div>

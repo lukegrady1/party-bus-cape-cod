@@ -15,8 +15,8 @@ export function BeachBarCrawls() {
   return (
     <>
       <SEO
-        title="Beach Bar Crawl Party Bus Cape Cod | Hit Every Spot on the Cape"
-        description="The best way to bar crawl Cape Cod. Party bus takes your crew to every beach bar from Hyannis to Provincetown. No driving, no stress. Starting at $200/hr."
+        title="Cape Cod Bar Crawl Bus | Beach Bar Crawl Party Bus Rental"
+        description="The best way to bar crawl Cape Cod by party bus. Custom routes from Hyannis to Provincetown — hit every beach bar, no driving, no stress. 15 & 22-seat buses from $200/hr. Book today."
         canonical="/services/beach-bar-crawls"
         schema={{
           '@context': 'https://schema.org',
@@ -52,7 +52,7 @@ export function BeachBarCrawls() {
               className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              Cape Cod has too many great bars to pick just one. Load up the crew, map out your route, and let us drive you from spot to spot while the party rolls between stops. This is how you do a bar crawl right.
+              Cape Cod has too many great bars to pick just one. Load up the crew, map out your route through Hyannis, Yarmouth, Dennis, Chatham, or all the way to Provincetown, and let us drive you from spot to spot while the party rolls between stops. This is how you do a Cape Cod bar crawl right.
             </p>
           </motion.div>
 

@@ -15,8 +15,8 @@ export function WineryTours() {
   return (
     <>
       <SEO
-        title="Winery Tour Party Bus Cape Cod | Sip Your Way Across the Cape"
-        description="Cape Cod winery tour by party bus. Visit multiple vineyards and breweries with your crew — no driving, all tasting. Premium buses from $200/hr. Book today."
+        title="Cape Cod Winery Tour Bus | Brewery Tour Party Bus Rental"
+        description="Cape Cod winery & brewery tour by party bus. Visit Truro Vineyards, First Crush Winery, Cape Cod Beer & more. No driving, all tasting. 15 & 22-seat buses from $200/hr. Book your tour today."
         canonical="/services/winery-tours"
         schema={{
           '@context': 'https://schema.org',
@@ -52,7 +52,7 @@ export function WineryTours() {
               className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto"
               style={{ fontFamily: 'DM Sans, sans-serif' }}
             >
-              Cape Cod's wine and craft beer scene keeps growing — and the best way to experience it is with your whole crew on one bus. Sip, taste, and explore without thinking twice about who's driving home.
+              Cape Cod's wine and craft beer scene keeps growing — and the best way to experience it is with your whole crew on one bus. Visit Truro Vineyards, First Crush Winery in Harwich, Cape Cod Beer, Hog Island Beer Co. in Orleans, or Bad Martha Farmer's Brewery in Falmouth. Sip, taste, and explore without thinking twice about who's driving home.
             </p>
           </motion.div>
 
